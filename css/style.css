@@ -118,12 +118,20 @@ main > .grider1 > img{
 
 }
 
-main > .grider1 > img:hover{
+main > .grider1 > img:hover:nth-child(odd){
     width: 50%;
     height: 80%;
     filter: brightness(1) contrast(1) saturate(1);
     transform: scale(1.2);
     box-shadow: 0 0 10px blueviolet;
+}
+
+main > .grider1 > img:hover:nth-child(even){
+    width: 50%;
+    height: 80%;
+    filter: brightness(1) contrast(1) saturate(1);
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgb(255, 0, 0);
 }
 
 main > .flex{
