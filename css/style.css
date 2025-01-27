@@ -1,0 +1,155 @@
+/* =====================================================
+                        HEADER
+===================================================== */
+
+body{
+    background-color: black;
+}
+
+header{
+    /* background-color: rgb(0, 215, 253); */
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    background-image: url(../picture/cake1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(1.2) contrast(1.1);
+    /* height: 100vh;
+    width: 100vw; */
+}
+
+.logo > h1{
+    text-align: center;
+    color: blueviolet;
+    font-size: 50px;
+    font-family: cursive;
+    margin: none;
+}
+.choice{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: blueviolet;
+}
+
+a{
+    text-decoration: none;
+    color: aqua;
+    transition-property: color;
+}
+
+
+.choice > .menu-item:nth-child(odd){
+    background-color: rgb(85, 0, 0);
+    padding: 5%;
+
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.choice > .menu-item:nth-child(even){
+    background-color: rgb(3, 3, 69);
+    padding: 5%;
+
+    transition-property: background-color, color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.choice > .menu-item:nth-child(odd):hover{
+    background-color: rgb(0, 255, 0);
+    padding: 5%;
+    color: black;
+}
+
+.choice > .menu-item:nth-child(even):hover{
+    background-color: rgb(0, 255, 0);
+    padding: 5%;
+    color: black;
+}
+
+/* =====================================================
+                        MAINER
+===================================================== */
+
+main{
+    color: blueviolet;
+}
+
+main > .grider{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+main > .grider > .headerLeft{
+    /* border: 2px solid blue; */
+}
+
+main > .grider > .headerRight > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+    filter: brightness(1.1) contrast(1.1) saturate(1.1);
+}
+
+main > .grider1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+main > .grider1 > img{
+    width: 30%;
+    height: 50%;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+    filter: brightness(0.5) contrast(0.5) saturate(0.5);
+
+    transition-property: width, height, filter;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+
+}
+
+main > .grider1 > img:hover{
+    width: 50%;
+    height: 80%;
+    filter: brightness(1) contrast(1) saturate(1);
+    transform: scale(1.2);
+    box-shadow: 0 0 10px blueviolet;
+}
+
+main > .flex{
+    display: flex;
+    flex-direction: row;
+}
+
+main > .flex > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5) contrast(0.5) saturate(0.5);
+        
+    transition-property:filter;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+main > .flex > img:hover{
+    filter: brightness(1) contrast(1) saturate(1);
+}
+
+/* =====================================================
+                        FOOTER
+===================================================== */
+
+footer{
+    color: blueviolet;
+}
